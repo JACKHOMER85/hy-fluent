@@ -11,7 +11,7 @@ With Fluent Scheme, you  not only are able to carry out not only computation job
 Important procedures for Panel creation.
 
 
-|| procedure name   || Usage || Commment ||
+|| Procedure Name   || Usage || Commment ||
 || cx-create-panel  || *(cx-create-panel title 'update-callback update-cb 'apply-callback apply-cb)*   || return an panel item ||
 || cx-show-panel    || *(cx-show-panel panel)* ||  ||
 
