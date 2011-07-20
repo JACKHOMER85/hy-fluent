@@ -15,7 +15,7 @@ Important procedures for Panel creation.
 
 
 || Procedure Name   || Usage || Commment ||
-|| cx-create-panel  || *(cx-create-panel title 'update-callback update-cb 'apply-callback apply-cb)*   || return an panel item ||
+|| cx-create-panel  || *(cx-create-panel title update-callback apply-callback)*   || return an panel item ||
 || cx-show-panel    || *(cx-show-panel panel)* ||  ||
 
 
