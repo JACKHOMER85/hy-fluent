@@ -1,0 +1,51 @@
+#summary An Introduction to creating panels with Fluent Scheme.
+#labels Fluent,Scheme,panel,Phase-Design,Phase-Implementation
+
+= Introduction =
+
+With Fluent Scheme, you  not only are able to carry out not only computation job automation, but also to make your own GUI.
+
+
+= Details =
+
+Important procedures for Panel creation.
+
+
+|| procedure name   || Usage || Commment ||
+|| cx-create-panel  || *(cx-create-panel title 'update-callback update-cb 'apply-callback apply-cb)*   || return an panel item ||
+|| cx-show-panel    || *(cx-show-panel panel)* ||  ||
+
+
+
+= Example =
+
+{{{
+(define gui-my-demo-panel
+  (let
+    (
+      (panel #f)
+    )
+    ;;; Update Callback
+    (define (update-cb . args)
+      ()
+    )
+    ;;; Apply Callback
+    (define (apply-cb . args)
+      ()
+    )
+    ;;; Creation the Panel
+    (lambda args
+      (if (not panel)
+        ;; create a panel
+        (let ()
+            (set! panel (cx-create-panel "Demo Panel" apply-cb update-cb))
+      )
+      ;; Now show it
+      (cx-show-panel panel)
+    )
+  )
+)
+
+;;; call the procedure
+(gui-my-demo-panel)
+}}}
