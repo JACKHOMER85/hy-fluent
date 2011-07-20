@@ -49,3 +49,7 @@ Important procedures for Panel creation.
 ;;; call the procedure
 (gui-my-demo-panel)
 }}}
+
+= Snapshot =
+
+http://p.blog.csdn.net/images/p_blog_csdn_net/fox000002/EntryImages/20090919/panel2.jpg
