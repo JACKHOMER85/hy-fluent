@@ -42,9 +42,10 @@ Important procedures for Panel creation.
         ;; create a panel
         (let ()
             (set! panel (cx-create-panel "Demo Panel" apply-cb update-cb))
-      )
-      ;; Now show it
-      (cx-show-panel panel)
+        )
+        ;; Now show it
+        (cx-show-panel panel)
+      ）
     )
   )
 )
